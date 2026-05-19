@@ -46,12 +46,12 @@ bun run dev
 
 2. Web:
 ```sh
-bun run --cwd ./web dev
+bun run dev:web
 ```
 
 3. Playground:
 ```sh
-bun run --cwd ./playground dev
+bun run dev:playground
 ```
 
 Then open:
