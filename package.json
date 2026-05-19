@@ -9,6 +9,8 @@
     "dev": "bun run build:sdk && bun run dev:all",
     "dev:all": "bun run build:sdk:watch & bun run dev:api",
     "dev:api": "bun run --hot src/index.ts",
+    "dev:web": "bun --bun run --cwd ./web dev",
+    "dev:playground": "bun --bun run --cwd ./playground dev",
     "build:sdk": "bun run --cwd ./sdk build",
     "build:sdk:watch": "bun run --cwd ./sdk build:watch",
     "env:generate": "bash ./scripts/generate-envs.sh",
