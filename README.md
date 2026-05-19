@@ -61,5 +61,5 @@ bun run dev:playground
 
 Then open:
 - API: `http://localhost:3000` (If using a tool like Postman or Insomnia, use this URL for API requests and use Bearer auth with the `ORCA_TOKEN` value.)
-- Web: Vite URL shown in terminal (commonly `http://localhost:5174`)
-- Playground: Vite URL shown in terminal (commonly `http://localhost:5173`)
+- Web: `http://localhost:5174`
+- Playground: `http://localhost:5173`
