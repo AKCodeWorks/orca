@@ -10,15 +10,7 @@
 ```sh
 bun run install:all
 ```
-2. Start Postgres (root):
-```sh
-docker compose up -d
-```
-3. Initialize database schema/client:
-```sh
-bun run db:init
-```
-4. Create env files:
+2. Create env files:
 ```sh
 bun run env:generate
 ```
@@ -26,6 +18,15 @@ If the script does not work in your environment, do it manually:
 - Root: copy `/Users/akcodeworks/dev/orca/example.env` to `.env`
 - Web: copy `/Users/akcodeworks/dev/orca/web/example.env` to `web/.env`
 - Playground: copy `/Users/akcodeworks/dev/orca/playground/example.env` to `playground/.env`
+
+3. Start Postgres (root):
+```sh
+docker compose up -d
+```
+4. Initialize database schema/client:
+```sh
+bun run db:init
+```
 
 ### Required env vars
 - Root `.env`
