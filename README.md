@@ -8,7 +8,7 @@
 ## Local Setup
 1. Install dependencies:
 ```sh
-bun install
+bun run install:all
 ```
 2. Start Postgres (root):
 ```sh
