@@ -1,0 +1,12 @@
+model OrcaJob {
+  id          String       @id @default(uuid(7))
+  name        String
+  functionId  String
+  function    OrcaFunction @relation(fields: [functionId], references: [id])
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  status      JobStatus
+  attempts    Int          @default(0)
+  maxAttempts Int          @default(3)
+  result      Json?
+}

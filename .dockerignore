@@ -1,0 +1,12 @@
+node_modules
+sdk/node_modules
+playground
+playground/node_modules
+dist
+sdk/dist
+.git
+.gitignore
+.env
+*.log
+.DS_Store
+web

@@ -1,0 +1,8 @@
+model OrcaFunction {
+  id         String    @id @default(uuid(7))
+  name       String
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+  jobs       OrcaJob[]
+  registered Boolean   @default(false)
+}

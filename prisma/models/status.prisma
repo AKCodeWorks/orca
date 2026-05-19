@@ -1,0 +1,6 @@
+enum JobStatus {
+QUEUED
+RUNNING
+COMPLETED
+FAILED
+}

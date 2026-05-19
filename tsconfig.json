@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx",
+    "types": ["bun"],
+    "module": "NodeNext"
+  },
+  "include": ["src", "prisma.config.ts"],
+  "exclude": ["playground", "sdk", "node_modules", "dist"]
+}
