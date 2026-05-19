@@ -14,7 +14,11 @@ bun run install:all
 ```sh
 docker compose up -d
 ```
-3. Create env files:
+3. Initialize database schema/client:
+```sh
+bun run db:init
+```
+4. Create env files:
 ```sh
 bun run env:generate
 ```

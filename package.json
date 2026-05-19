@@ -7,6 +7,7 @@
   ],
   "scripts": {
     "install:all": "bun install && bun install --cwd ./web && bun install --cwd ./playground && bun install --cwd ./sdk",
+    "db:init": "bunx prisma migrate deploy && bunx prisma generate",
     "dev": "bun run build:sdk && bun run dev:all",
     "dev:all": "bun run build:sdk:watch & bun run dev:api",
     "dev:api": "bun run --hot src/index.ts",
